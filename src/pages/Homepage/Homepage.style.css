@@ -5,6 +5,10 @@
     overflow-y: scroll;
     /* background: linear-gradient(169.22deg, #FDF7F7 12.19%, #EFEFEF 92%); */
 }
+body{
+    --token-99b13e40-5413-47d9-996c-2fa7047e46d6: rgb(255, 255, 255);
+    --token-ad9b4115-c8bf-4757-af13-005f7e571fb7: rgb(0, 0, 0);
+}
 
 .marker-container {
     width: 10vw;

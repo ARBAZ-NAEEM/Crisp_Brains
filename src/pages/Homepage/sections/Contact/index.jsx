@@ -98,11 +98,11 @@ const Contact = () => {
             </div>
 
 
-            <div className='contact-tnc'>
+            {/* <div className='contact-tnc'>
                 <a href='/privacyPolicy'>PRIVACY POLICY</a>
                 <div className='dash'></div>
                 <a href='/termsOfService'>TERMS OF SERVICE</a>
-            </div>
+            </div> */}
         </section>
     )
 }

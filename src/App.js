@@ -7,8 +7,6 @@ import { Routes, Route } from "react-router-dom"
 import Homepage from './pages/Homepage';
 import EarlyAccessForm from './pages/Homepage/forms/EarlyAccess';
 import PartnerForm from './pages/Homepage/forms/Partner';
-import PrivacyPolicy from './pages/Privacy';
-import TermsOfService from './pages/Tnc';
 
 function App() {
 	return (

@@ -26,7 +26,6 @@ const Homepage = () => {
     }, [10]);
   }, []);
 
-
   // let main = document.querySelector(".aaa");
   // let cursor = document.getElementById("skjdnakjd");
 
@@ -35,11 +34,11 @@ const Homepage = () => {
   //     cursor.style.top = e.y + "px";
   // })
 
-
   return (
     <>
       <div id="smooth-wrapper" className="aaa">
         <div className="cursor" id="skjdnakjd"></div>
+        
         <div id="smooth-content">
           <div className="homepage">
             {/* <Navbar /> */}
@@ -49,7 +48,7 @@ const Homepage = () => {
             <Sound />
             {/* <Web3 /> */}
             {/* <Hands /> */}
-            <Fit />
+            {/* <Fit /> */}
             {/* <Contributors /> */}
             {/* <Contact /> */}
           </div>
@@ -57,9 +56,6 @@ const Homepage = () => {
       </div>
     </>
   );
-  
 };
-
-
 
 export default Homepage;
