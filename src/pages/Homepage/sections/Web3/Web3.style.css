@@ -1,0 +1,473 @@
+.web3-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+}
+
+.web3-container div {
+    width: 50%;
+}
+
+.web3-container div h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #1B2B41;
+    text-align: center;
+    z-index: 2;
+}
+
+.web3-container div h1 span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 100px;
+    color: #C94B32;
+}
+
+.web3-container p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* or 120% */
+
+    /* Grey */
+    color: #76808D;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.web3-container button {
+    background: #C94B32;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 300px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
+}
+
+.web3-container button:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.web3-container button:focus {
+    background-color: #b12e15;
+}
+
+.web3-container .ipfs-img {
+    position: absolute;
+    right: 12%;
+    top: 32%;
+}
+
+.web3-container .polygon-img {
+    position: absolute;
+    right: 11%;
+    bottom: 27%;
+}
+
+.web3-container .safe-img {
+    position: absolute;
+    left: 10%;
+    bottom: 45%;
+}
+
+.web3-container .eth-img {
+    position: absolute;
+    left: 17%;
+    top: 17%;
+    z-index: 1;
+}
+
+.web3-container .web-img {
+    position: absolute;
+    right: 16%;
+    top: 17%;
+}
+
+.web3-container .biconomy-img {
+    position: absolute;
+    left: 18%;
+    bottom: 22%;
+}
+
+.web3-container .mobile-img {
+    display: none;
+}
+
+@media only screen and (max-width: 340px) {
+
+    .web3-container {
+        height: 0;
+        height: 100%;
+    }
+
+    .web3-container div {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .web3-container div h1 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .web3-container div h1 span {
+        font-size: 30px;
+    }
+
+    .web3-container .mobile-img {
+        display: block;
+        width: 80%;
+        height: 280px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .web3-container .mobile-img .ipfs-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 0;
+        right: 10%;
+    }
+
+    .web3-container .safe-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 5%;
+        left: 10%;
+    }
+
+    .web3-container .mobile-img .polygon-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 29%;
+        left: -5%;
+    }
+
+    .web3-container .mobile-img .eth-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 20%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .web-img-1 {
+        position: absolute;
+        height: 70px;
+        bottom: 32%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .biconomy-img-1 {
+        position: absolute;
+        height: 70px;
+        bottom: 8%;
+        left: 0%;
+    }
+
+    .web3-container .ipfs-img {
+        display: none;
+    }
+
+    .web3-container .polygon-img {
+        display: none;
+    }
+
+    .web3-container .eth-img {
+        display: none;
+    }
+
+    .web3-container .web-img {
+        display: none;
+    }
+
+    .web3-container .biconomy-img {
+        display: none;
+    }
+
+    .web3-container .safe-img {
+        display: none;
+    }
+
+    .web3-container p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .web3-container button {
+        background: #C94B32;
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 260px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 345px) and (max-width : 375px) {
+    .web3-container {
+        height: 0;
+        height: 100%;
+    }
+
+    .web3-container div {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .web3-container div h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .web3-container div h1 span {
+        font-size: 40px;
+    }
+
+    .web3-container .mobile-img {
+        display: block;
+        width: 80%;
+        height: 340px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .web3-container .mobile-img .ipfs-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 0;
+        right: 5%;
+    }
+
+    .web3-container .safe-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 5%;
+        left: 5%;
+    }
+
+    .web3-container .mobile-img .polygon-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 30%;
+        left: -5%;
+    }
+
+    .web3-container .mobile-img .eth-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 20%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .web-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 28%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .biconomy-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .web3-container .ipfs-img {
+        display: none;
+    }
+
+    .web3-container .polygon-img {
+        display: none;
+    }
+
+    .web3-container .eth-img {
+        display: none;
+    }
+
+    .web3-container .web-img {
+        display: none;
+    }
+
+    .web3-container .biconomy-img {
+        display: none;
+    }
+
+    .web3-container .safe-img {
+        display: none;
+    }
+
+    .web3-container p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .web3-container button {
+        background: #C94B32;
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 260px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width : 425px) {
+    .web3-container {
+        height: 0;
+        height: 100%;
+    }
+
+    .web3-container div {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .web3-container div h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .web3-container div h1 span {
+        font-size: 40px;
+    }
+
+    .web3-container .mobile-img {
+        display: block;
+        width: 80%;
+        height: 340px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .web3-container .mobile-img .ipfs-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 0;
+        right: 10%;
+    }
+
+    .web3-container .safe-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 5%;
+        left: 10%;
+    }
+
+    .web3-container .mobile-img .polygon-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 30%;
+        left: -5%;
+    }
+
+    .web3-container .mobile-img .eth-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 20%;
+        right: 2%;
+    }
+
+    .web3-container .mobile-img .web-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 28%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .biconomy-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .web3-container .ipfs-img {
+        display: none;
+    }
+
+    .web3-container .polygon-img {
+        display: none;
+    }
+
+    .web3-container .eth-img {
+        display: none;
+    }
+
+    .web3-container .web-img {
+        display: none;
+    }
+
+    .web3-container .biconomy-img {
+        display: none;
+    }
+
+    .web3-container .safe-img {
+        display: none;
+    }
+
+    .web3-container p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .web3-container button {
+        background: #C94B32;
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 260px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width : 768px) {}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {}

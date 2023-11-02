@@ -1,0 +1,43 @@
+import './Fit.style.css';
+import React, { useEffect } from "react";
+import { HiOutlineArrowRight } from 'react-icons/hi'
+
+import dropbtn from '../../../../assets/drop-btn.svg'
+
+const Fit = () => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            window.gsap.to('.hold', {
+                duration: 1, y: 10, ease: "none",
+                scrollTrigger: {
+                    trigger: ".fit-container",
+                    scrub: 1,
+                    pin: false,
+                    start: "top+=50",
+                    // markers: true,
+                    end: "top+=150"
+                }
+            })
+        })
+    }, [])
+
+    return (
+        <section className='fit-container'>
+            <h1 className='fit-title'>You don’t<br />have to <span>fit in</span></h1>
+            <p className='fit-p'>Lomads plugs seamlessly into your web3 organization.</p>
+            <p className='fit-content'>Imagine Lomads as a lego set of web3 tools. Simply get on Lomads with your gang and keep adding tool-legos as your needs evolve.</p>
+            <button onClick={() => { window.location.href = "/earlyAccess" }}>GET EARLY ACCESS <HiOutlineArrowRight size={22} /></button>
+
+            <div className='bars-row'>
+                <div className='bars-gray' style={{ width: '338px' }}></div>
+                <div className='bars-gray' style={{ width: '338px', marginLeft: '1rem' }}></div>
+                <img className='hold' src={dropbtn} />
+                <div className='bars-gray' style={{ width: '338px' }}></div>
+                <div className='bars-gray' style={{ width: '338px', marginLeft: '1rem' }}></div>
+            </div>
+        </section>
+    )
+}
+
+export default Fit;

@@ -1,0 +1,557 @@
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
+.fade-h1 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.fade-p {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.75s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.fade-btn {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+
+.banner-container {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    position: relative;
+}
+
+.banner-container .heading-section {
+    width: 100%;
+    position: relative;
+}
+
+.banner-container .heading-section .heading-pill {
+    background: #FFFFFF;
+    /* Color-drop-HOVER */
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+    border-radius: 20px;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .heading-section .heading-pill span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #B12F15;
+    margin-left: 6px;
+}
+
+.banner-container .heading-section .heading-pill.pos1 {
+    position: absolute;
+    top: 0%;
+    left: 22%;
+}
+
+.banner-container .heading-section .heading-pill.pos2 {
+    position: absolute;
+    bottom: 5%;
+    right: 23%;
+}
+
+.banner-container .heading-section .heading-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .heading-section .heading-container h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 95px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1B2B41;
+    padding: 0 32px;
+}
+
+.banner-container .heading-section .heading-container h1 span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 33px;
+    color: #C94B32;
+}
+
+.banner-container p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #76808D;
+    /* margin: 20px 0; */
+    margin: 0 0 20px 0;
+}
+
+.banner-container .access-btn {
+    background-color: #C94B32;
+    border-radius: 5px;
+    width: 265px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.011em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
+}
+
+.banner-container .access-btn:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.banner-container .access-btn:focus {
+    background-color: #b12e15;
+}
+
+.banner-container .hero-section {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-container .hero-section img {
+    width: 100%;
+    z-index: 2;
+}
+
+.banner-container .hero-section .whitebox {
+    height: 100px;
+    width: 365px;
+}
+
+.banner-container .hero-section .whitebox.pos1 {
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    z-index: 1 !important;
+}
+
+.banner-container .hero-section .whitebox.pos2 {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+}
+
+.banner-container .hero-section .whitebox.pos3 {
+    position: absolute;
+    bottom: 27%;
+    right: 5%;
+}
+
+@media only screen and (max-width: 340px) {
+    .banner-container {
+        overflow-x: hidden;
+        padding-top: 0;
+    }
+
+    .banner-container .heading-section {
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-container .heading-section .heading-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner-container .heading-section .heading-container h1 {
+        font-size: 24px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .banner-container .heading-section .heading-container h1 span {
+        font-size: 24px;
+    }
+
+    .banner-container .heading-section .heading-pill {
+        display: none;
+    }
+
+    /* .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 25%;
+        left: 3%;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 42%;
+        right: 8%;
+    } */
+
+    .banner-container p {
+        font-size: 20px;
+    }
+
+    .banner-container .hero-section {
+        margin-top: 0px;
+    }
+
+    .banner-container .hero-section img {
+        width: 225%;
+    }
+
+    .banner-container .hero-section .whitebox {
+        display: none;
+    }
+
+    .banner-container .access-btn {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 341px) and (max-width : 375px) {
+    .banner-container {
+        overflow-x: hidden;
+        padding-top: 0;
+    }
+
+    .banner-container .heading-section {
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-container .heading-section .heading-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner-container .heading-section .heading-container h1 {
+        font-size: 30px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .banner-container .heading-section .heading-container h1 span {
+        font-size: 30px;
+    }
+
+    .banner-container .heading-section .heading-pill {
+        display: none;
+    }
+
+    /* .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 25%;
+        left: 3%;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 50%;
+        right: 8%;
+    } */
+
+    .banner-container p {
+        font-size: 18px;
+        margin: 0px 30px 20px 30px;
+    }
+
+    .banner-container .hero-section {
+        margin-top: 0px;
+    }
+
+    .banner-container .hero-section img {
+        width: 225%;
+    }
+
+    .banner-container .hero-section .whitebox {
+        display: none;
+    }
+
+    .banner-container .access-btn {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width : 425px) {
+    .banner-container {
+        overflow-x: hidden;
+    }
+
+    .banner-container .heading-section {
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-container .heading-section .heading-container {
+        width: 100%;
+    }
+
+    .banner-container .heading-section .heading-container h1 {
+        font-size: 32px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .banner-container .heading-section .heading-container h1 span {
+        font-size: 32px;
+    }
+
+    .banner-container .heading-section .heading-pill {
+        display: none;
+    }
+
+    /* .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 28%;
+        left: 8%;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 48%;
+        right: 13%;
+    } */
+
+    .banner-container p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        color: #76808D;
+        margin: 0px 30px 20px 30px;
+    }
+
+    .banner-container .hero-section {
+        margin-top: 0px;
+    }
+
+    .banner-container .hero-section img {
+        width: 225%;
+    }
+
+    .banner-container .hero-section .whitebox {
+        display: none;
+    }
+
+    .banner-container .access-btn {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width : 768px) {
+    .banner-container {
+        overflow-x: hidden;
+    }
+
+    .banner-container .heading-section {
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-container .heading-section h1 {
+        font-size: 38px;
+        line-height: 50px
+    }
+
+    .banner-container .heading-section h1 span {
+        font-size: 50px;
+    }
+
+    .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 27%;
+        left: 6%;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 63%;
+        right: 19%;
+    }
+
+    .banner-container p {
+        font-size: 18px;
+        margin: 0px 30px 20px 30px;
+    }
+
+    .banner-container .hero-section {
+        margin-top: 0px;
+    }
+
+    .banner-container .hero-section .whitebox {
+        height: 70px;
+        width: 200px;
+    }
+
+    .banner-container .hero-section .whitebox.pos1 {
+        left: 0%;
+    }
+
+    .banner-container .hero-section .whitebox.pos3 {
+        position: absolute;
+        bottom: 25%;
+        right: 2%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    .banner-container {
+        overflow-x: hidden;
+    }
+
+    .banner-container .heading-section {
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-container .heading-section h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner-container .heading-section h1 span {
+        font-size: 60px;
+    }
+
+    .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 24%;
+        left: 9%;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 63%;
+        right: 21%;
+    }
+
+    .banner-container p {
+        font-size: 18px;
+        margin: 0px 30px 30px 30px;
+    }
+
+    .banner-container .hero-section {
+        margin-top: 0px;
+    }
+
+    .banner-container .hero-section .whitebox {
+        height: 70px;
+        width: 200px;
+    }
+
+    .banner-container .hero-section .whitebox.pos1 {
+        left: 0%;
+    }
+
+    .banner-container .hero-section .whitebox.pos3 {
+        position: absolute;
+        bottom: 25%;
+        right: 2%;
+    }
+}
