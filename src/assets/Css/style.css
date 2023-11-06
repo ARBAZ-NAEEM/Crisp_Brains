@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rajdhani:wght@500;700&display=swap");
+/* Global Css Start Here */
+body {
+	cursor: none !important;
+}
+.cursor_ball {
+	width: 20px;
+	height: 20px;
+	position: fixed;
+	background-color: #fff;
+	border-radius: 50%;
+	pointer-events: none;
+	z-index: 9;
+	mix-blend-mode: difference;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.back_wall {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9;
+}
+.back_wall .borderLines {
+	height: 100vh;
+	border-right: 1px solid #ddd;
+	z-index: -9;
+}
+/* Global Css End Here */
+
+/* Home Page Css Start Here */
+
+/* Banner Css Start Here */
+.hero_sec {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.hero_sec .banner_txt {
+	font-size: 180px;
+	color: #000;
+	font-family: "Rajdhani", sans-serif;
+	font-size: 220px;
+	font-weight: 600;
+	overflow-y: hidden;
+}
+.hero_sec .banner_txt .hero_txt {
+	display: inline-block;
+	transform: translateY(100%);
+}
+
+section.scroll h1 {
+	font-size: 180px;
+	font-family: "Rajdhani";
+	font-weight: 600;
+}
+.scroll .txtwrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	left: 0;
+	right: 0;
+}
+.bg-img {
+	transform: scale(0.5);
+}
+/* section.scroll .scrollTxt1 {
+	transform: translateX(-160%);
+} */
+/* Banner Css End Here */
+.projects_sec .title h2 {
+	font-family: "Rajdhani";
+	font-weight: 600;
+	font-size: 50px;
+	border: 1px solid #000;
+	width: 20%;
+	margin: 0px auto;
+	text-align: center;
+	border-radius: 50px;
+}
+.projects_sec .gallery {
+	display: -webkit-box;
+	height: 100vh;
+	padding: 90px 0 0px;
+	height: 95vh !important;
+}
+.projects_sec .gallery .galleryBox {
+	display: flex;
+	padding: 0 10px 0 10px;
+}
+.projects_sec .gallery .galleryBox img {
+	width: 100%;
+	height: 250px;
+}
+.projects_sec .gallery .galleryBox {
+	width: 25%;
+	width: 25%;
+	padding: 0 20px;
+}
+.projects_sec .gallery .galleryBox video {
+	object-fit: cover;
+}
+.projects_sec .gallery .galleryBox {
+	display: flex;
+	flex-direction: column;
+}
+.projects_sec .gallery .scroll_2 {
+	justify-content: end;
+}
+.projects_sec .gallery .scroll_3 {
+	justify-content: center;
+}
+.projects_sec .gallery .scroll_4 {
+	justify-content: end;
+}
+.projects_sec .gallery .scroll_6 {
+	justify-content: center;
+}
+.projects_sec .gallery .scroll_8 {
+	justify-content: end;
+}
+.projects_sec .gallery .img_box {
+	height: 250px;
+	overflow: hidden;
+}
+.projects_sec .gallery .button-group {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	scale: 0 !important;
+	transition: 0.3s;
+}
+.projects_sec .gallery .targetbox:hover .button-group {
+	scale: 1 !important;
+}
+.projects_sec .gallery .button-group .icon img {
+	width: 14px;
+	height: 14px;
+}
+.projects_sec .gallery .button-group .link_btn {
+	background: transparent;
+	border: 0;
+	height: auto;
+	width: 100%;
+	box-shadow: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.projects_sec .gallery .button-group .link_btn .txt {
+	background: #ffffff17;
+	padding: 3px 20px;
+	border-radius: 50px;
+	font-size: 25px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+	margin-right: 15px;
+}
+.projects_sec .gallery .button-group .link_btn .icon {
+	padding: 10px 10px;
+	border-radius: 50px;
+	height: 40px;
+	width: 37px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff17;
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+}
+.projects_sec .gallery .galleryBox .detail_box h5 {
+	font-size: 14px;
+	color: #000;
+	font-family: rajdhani;
+	font-weight: 600;
+}
+.projects_sec .gallery .galleryBox .detail_box {
+	padding-top: 15px;
+}
+.tbi_growup {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: -99;
+	overflow: hidden;
+}
+.tbi_growup .heading {
+	z-index: -99;
+	display: flex;
+	align-items: center;
+}
+.tbi_growup .heading h2 {
+	font-size: 400px;
+	color: #fff;
+}
+.tbi_growup .ball {
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px auto;
+	z-index: -2;
+	border-radius: 50%;
+	width: 3rem;
+	transform: scale(0);
+	height: 3rem;
+}
+.txt-slider {
+	text-align: center;
+	color: #fff;
+	font-family: sans-serif;
+}
+.txt_slide1 {
+	transform: translateX(-20%);
+}
+.txt_slide2 {
+	transform: translateX(15%);
+}
+.footerBottom {
+	padding: 40px 0;
+	text-align: center;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+}
+.footerBottom .footerLogo {
+	font-size: 200px;
+	font-family: "Rajdhani";
+	font-weight: 600;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footerBottom .footerLogo .foot_txt {
+	display: block;
+	color: #fff;
+	transform: translateY(80%);
+}
+/* Home Page Css End Here */
