@@ -30,6 +30,7 @@ const Banner = () => {
 						<span className="hero_txt">N</span>
 						<span className="hero_txt">S</span>
 					</h1>
+					<h3 className="subtitle">LET US HELP YOU GLOW & GROW DIGITALLY!</h3>
 				</div>
 			</section>
 			{/* Banner Component End Here */}

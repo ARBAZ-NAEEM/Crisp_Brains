@@ -20,6 +20,14 @@ const Tbi = () => {
 			scale: 47,
 			ease: Power1.easeInOut,
 		});
+		tb.to(
+			".tbi_title",
+			{
+				scale: 1,
+				ease: Power1.easeInOut,
+			},
+			"<",
+		);
 		tb.to("body", {
 			backgroundColor: "#000",
 			ease: Power1.easeInOut,

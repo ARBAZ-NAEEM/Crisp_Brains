@@ -122,7 +122,9 @@ const HorizontalGallery = () => {
 		<>
 			<section className="projects_sec py-5 overflow-hidden">
 				<div className="title">
-					<h2>PROJECTS</h2>
+					<h2>
+						<span>A GLIMPSE AT OUR SERVICES</span>
+					</h2>
 				</div>
 				<div className="gallery">
 					{galleryData?.map((items, index) => {

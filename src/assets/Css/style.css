@@ -53,12 +53,36 @@ body {
 .hero_sec .banner_txt .hero_txt {
 	display: inline-block;
 	transform: translateY(100%);
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
-
-section.scroll h1 {
+.hero_sec .subtitle {
+	font-family: "Rajdhani";
+	margin-top: 5rem;
+	font-size: 32px;
+}
+.scroll h1 {
 	font-size: 180px;
 	font-family: "Rajdhani";
 	font-weight: 600;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .scroll .txtwrapper {
 	display: flex;
@@ -81,11 +105,15 @@ section.scroll h1 {
 	font-family: "Rajdhani";
 	font-weight: 600;
 	font-size: 50px;
+	margin: 0px auto;
+	text-align: center;
+}
+.projects_sec .title h2 span {
 	border: 1px solid #000;
-	width: 20%;
 	margin: 0px auto;
 	text-align: center;
 	border-radius: 50px;
+	padding: 5px 25px;
 }
 .projects_sec .gallery {
 	display: -webkit-box;
@@ -209,6 +237,17 @@ section.scroll h1 {
 .tbi_growup .heading h2 {
 	font-size: 400px;
 	color: #fff;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transform: scale(0);
 }
 .tbi_growup .ball {
 	position: absolute;
@@ -258,5 +297,15 @@ section.scroll h1 {
 	display: block;
 	color: #fff;
 	transform: translateY(80%);
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 /* Home Page Css End Here */
