@@ -4,6 +4,7 @@ import ShowCase from "../../components/ShowCase";
 import HorizontalGallery from "../../components/HorizontalGallery";
 import Tbi from "../../components/Tbi";
 import Footer from "../../components/Footer";
+import ContentText from "../../components/ContentText";
 
 const Index = () => {
 	return (
@@ -12,6 +13,8 @@ const Index = () => {
 
 			{/* Banner Component Include */}
 			<Banner />
+
+			<ContentText />
 			{/* Banner Component Include */}
 
 			{/* Showcase Component Include */}

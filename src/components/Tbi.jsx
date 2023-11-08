@@ -62,15 +62,14 @@ const Tbi = () => {
 		<>
 			<section className="tbi_growup overflow-hidden">
 				<div className="heading" style={{ height: "100vh" }}>
-					<h2 className="tbi_title">TBI</h2>
+					<h2 className="tbi_title">Revamp your online presence with a FREE website or logo design! Love it, pay for it. </h2>
 					<div className="ball"></div>
 				</div>
 			</section>
 			<div className="txt-slider overflow-hidden">
-				<h3 className="txt_slide1">
-					THIS SITE WAS DESIGNED BY FAVORIT X FRAME
-				</h3>
-				<h3 className="txt_slide2">EXCLUSIVE FOR THE BRAND IDENTITY.</h3>
+				<h3 className="">
+				Get in touch today!				</h3>
+				<h3 className="txt_slide2"></h3>
 			</div>
 		</>
 	);

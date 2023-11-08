@@ -22,66 +22,45 @@ const HorizontalGallery = () => {
 			id: 1,
 			img: Gal1,
 			link: "/",
-			name: "Nike X Lebron",
-			type: "Type Design",
+			name: "Website Development",
 			color: "#000",
 		},
 		{
 			id: 2,
 			img: Gal2,
 			link: "/",
-			name: "Porsche",
-			type: "Campaign",
+			name: "SEO",
 			color: "#fff",
 		},
 		{
 			id: 3,
 			img: Gal3,
 			link: "/",
-			name: "Bang & Olufsen",
-			type: "Design",
+			name: "Social Media Marketing",
 			color: "#fff",
 		},
 		{
 			id: 4,
 			img: Gal4,
 			link: "/",
-			name: "AM/PM",
-			type: "Packaging",
+			name: "Pay-per-Click Advertising (PPC)",
 			color: "#000",
 		},
 		{
 			id: 5,
 			img: Gal5,
 			link: "/",
-			name: "Aesop",
-			type: "Campaign",
+			name: "Content Marketing",
 			color: "#000",
 		},
 		{
 			id: 6,
 			img: Gal6,
 			link: "/",
-			name: "Lululemon",
-			type: "Editorial",
+			name: "Email Marketing",
 			color: "#fff",
 		},
-		{
-			id: 7,
-			img: Gal7,
-			link: "/",
-			name: "Anti",
-			type: "Branding",
-			color: "#fff",
-		},
-		{
-			id: 8,
-			img: Gal8,
-			link: "/",
-			name: "Teaquila",
-			type: "Packaging",
-			color: "#fff",
-		},
+
 	];
 
 	// Horizontal Scrolll gsap
@@ -136,7 +115,7 @@ const HorizontalGallery = () => {
 											className={`galleryBox scroll_${items?.id}`}
 											key={index}
 										>
-											<div className="img_box position-relative targetbox">
+											{/* <div className="img_box position-relative targetbox">
 												<img
 													src={items?.img}
 													alt="gal1"
@@ -164,17 +143,16 @@ const HorizontalGallery = () => {
 														</span>
 													</button>
 												</div>
-											</div>
+											</div> */}
 											<div className="detail_box d-flex align-items-center justify-content-between">
-												<h5 className="name_of_scape">{items?.name}</h5>
-												<h5 className="type">{items?.type}</h5>
+												<h2 className="name_of_scape">{items?.name}</h2>
 											</div>
 										</div>
 									</>
 								) : (
 									<>
 										<div className={`galleryBox scroll_${items?.id}`}>
-											<div className="img_box position-relative targetbox">
+											{/* <div className="img_box position-relative targetbox">
 												<ReactPlayer
 													width="100%"
 													height="250px"
@@ -205,10 +183,10 @@ const HorizontalGallery = () => {
 														</span>
 													</button>
 												</div>
-											</div>
+											</div> */}
 											<div className="detail_box d-flex align-items-center justify-content-between">
-												<h5 className="name_of_scape">{items?.name}</h5>
-												<h5 className="type">{items?.type}</h5>
+												<h2 className="name_of_scape">{items?.name}</h2>
+												{/* <h5 className="type">{items?.type}</h5> */}
 											</div>
 										</div>
 									</>

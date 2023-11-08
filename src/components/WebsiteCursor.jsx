@@ -27,22 +27,22 @@ const WebsiteCursor = () => {
 		});
 		$(".gallery .img_box").on("mouseleave", function () {
 			gsap.to(targets, {
-				width: "20px",
-				height: "20px",
+				width: "40px",
+				height: "40px",
 			});
 		});
 
 		// On Banner text Extend Height & Width of cursor
 		$(".banner_txt").on("mouseenter", function () {
 			gsap.to(targets, {
-				width: "200px",
-				height: "200px",
+				width: "40px",
+				height: "40px",
 			});
 		});
 		$(".banner_txt").on("mouseleave", function () {
 			gsap.to(targets, {
-				width: "20px",
-				height: "20px",
+				width: "40px",
+				height: "40px",
 			});
 		});
 	}, []);
