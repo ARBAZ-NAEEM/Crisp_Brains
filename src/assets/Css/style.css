@@ -72,7 +72,7 @@ body {
 	-webkit-text-fill-color: transparent;
 }
 section.hero_sec h1.banner_txt span.hero_txt11 {
-	color: gray !important;
+	color: gray;
 	background-image: unset;
 	-webkit-text-fill-color: unset;
 }
