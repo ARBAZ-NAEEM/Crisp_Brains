@@ -2,6 +2,11 @@
 /* Global Css Start Here */
 body {
 	cursor: none !important;
+	scroll-behavior: smooth;
+}
+@font-face {
+	font-family: "bodoni-roman";
+	src: url(../fonts/bodoni-roman.otf);
 }
 .cursor_ball {
 	width: 20px;
@@ -46,9 +51,10 @@ body {
 .hero_sec .banner_txt {
 	font-size: 180px;
 	color: grey;
-	font-family: "Rajdhani", sans-serif;
-	font-size: 220px;
-	font-weight: 600;
+	/* font-family: "Rajdhani", sans-serif; */
+	font-family: "bodoni-roman";
+	font-size: 175px;
+	/* font-weight: 600; */
 	overflow-y: hidden;
 }
 .hero_sec .banner_txt .hero_txt {
@@ -66,19 +72,27 @@ body {
 	-webkit-text-fill-color: transparent;
 }
 section.hero_sec h1.banner_txt span.hero_txt11 {
-    color: gray !important;
-    background-image: unset;
-    -webkit-text-fill-color: unset;
+	color: gray !important;
+	background-image: unset;
+	-webkit-text-fill-color: unset;
 }
-.hero_sec .subtitle {
+.second_hero_sec .subtitle {
 	font-family: "Rajdhani";
 	margin-top: 5rem;
 	font-size: 60px;
+	text-align: center;
 }
 h2.subtitle span.hero_txt {
-    background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .scroll h1 {
 	font-size: 90px;
@@ -298,9 +312,10 @@ h2.subtitle span.hero_txt {
 	align-items: center;
 }
 .footerBottom .footerLogo {
-	font-size: 200px;
-	font-family: "Rajdhani";
-	font-weight: 600;
+	font-size: 155px;
+	/* font-family: "Rajdhani"; */
+	font-family: "bodoni-roman";
+	/* font-weight: 600; */
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -323,14 +338,38 @@ h2.subtitle span.hero_txt {
 }
 /* Home Page Css End Here */
 section.contentText h2 {
-    font-family: "Rajdhani";
+	font-family: "Rajdhani";
 	padding: 0 125px;
-    font-size: 50px;
+	font-size: 50px;
 	text-align: center;
 }
 
 section.contentText h2 span.hero_txt {
-    background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
+.fullpageScroll {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.heroMain {
+	position: relative;
+}
+/* .heroMain .fullpageScroll {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.heroMain {
+	height: 100vh;
+} */

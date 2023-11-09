@@ -60,7 +60,6 @@ const HorizontalGallery = () => {
 			name: "Email Marketing",
 			color: "#fff",
 		},
-
 	];
 
 	// Horizontal Scrolll gsap
