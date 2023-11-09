@@ -53,7 +53,7 @@ body {
 	color: grey;
 	/* font-family: "Rajdhani", sans-serif; */
 	font-family: "bodoni-roman";
-	font-size: 175px;
+	font-size: 165px;
 	/* font-weight: 600; */
 	overflow-y: hidden;
 }
@@ -241,11 +241,15 @@ h2.subtitle span.hero_txt {
 .projects_sec .gallery .galleryBox .detail_box h5 {
 	font-size: 14px;
 	color: #000;
-	font-family: rajdhani;
+	font-family: "rajdhani";
 	font-weight: 600;
 }
 .projects_sec .gallery .galleryBox .detail_box {
 	padding-top: 15px;
+}
+.projects_sec .gallery .galleryBox .detail_box .name_of_scape {
+	font-size: 23px;
+	font-family: "Rajdhani";
 }
 .tbi_growup {
 	height: 100vh;
