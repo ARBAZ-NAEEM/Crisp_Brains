@@ -8,6 +8,8 @@ body {
 	font-family: "bodoni-roman";
 	src: url(../fonts/bodoni-roman.otf);
 }
+
+
 .cursor_ball {
 	width: 20px;
 	height: 20px;
@@ -71,11 +73,14 @@ body {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-section.hero_sec h1.banner_txt span.hero_txt11 {
-	color: gray;
-	background-image: unset;
-	-webkit-text-fill-color: unset;
+footer.footerBottom h2.footerLogo span.hero_txt11 {
+	-webkit-text-fill-color: gray;
 }
+
+section.hero_sec h1.banner_txt span.hero_txt11 {
+	-webkit-text-fill-color: gray;
+}
+
 .second_hero_sec .subtitle {
 	font-family: "Rajdhani";
 	margin-top: 5rem;
@@ -135,11 +140,12 @@ h2.subtitle span.hero_txt {
 	text-align: center;
 }
 .projects_sec .title h2 span {
-	border: 1px solid #000;
 	margin: 0px auto;
 	text-align: center;
-	border-radius: 50px;
 	padding: 5px 25px;
+	background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .projects_sec .gallery {
 	display: -webkit-box;
@@ -248,7 +254,7 @@ h2.subtitle span.hero_txt {
 	padding-top: 15px;
 }
 .projects_sec .gallery .galleryBox .detail_box .name_of_scape {
-	font-size: 23px;
+	font-size: 50px;
 	font-family: "Rajdhani";
 }
 .tbi_growup {
@@ -301,6 +307,7 @@ h2.subtitle span.hero_txt {
 	text-align: center;
 	color: #fff;
 	font-family: sans-serif;
+	padding-bottom: 100px;
 }
 .txt_slide1 {
 	transform: translateX(-20%);
@@ -314,6 +321,7 @@ h2.subtitle span.hero_txt {
 	height: 50vh;
 	display: flex;
 	align-items: center;
+	background-color: #fff;
 }
 .footerBottom .footerLogo {
 	font-size: 155px;
@@ -329,17 +337,18 @@ h2.subtitle span.hero_txt {
 	display: block;
 	color: #fff;
 	transform: translateY(80%);
-	/* background-image: linear-gradient(
+	background-image: linear-gradient(
 		to right,
 		#d11d58,
 		#bd195f,
 		#a71b64,
 		#901e65,
 		#792164
-	); */
+	); 
 	-webkit-background-clip: text;
-	/* -webkit-text-fill-color: transparent; */
+	 -webkit-text-fill-color: transparent; 
 }
+
 /* Home Page Css End Here */
 section.contentText h2 {
 	font-family: "Rajdhani";

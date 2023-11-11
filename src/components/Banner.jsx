@@ -12,6 +12,12 @@ const Banner = () => {
 				amount: 0.8,
 			},
 		});
+		tl.to(".hero_txt11", {
+			y: 0,
+			stagger: {
+				amount: 0.8,
+			},
+		});
 		// gsap.to("#test", {
 		// 	duration: 5,
 		// 	scrambleText: "THIS IS NEW TEXT",
@@ -56,16 +62,16 @@ const Banner = () => {
 					<div className="container">
 						<h1 className="banner_txt">
 							<span className="hero_txt hero_txt11">C</span>
-							<span className="hero_txt hero_txt11">R</span>
-							<span className="hero_txt hero_txt11">I</span>
-							<span className="hero_txt hero_txt11">S</span>
-							<span className="hero_txt hero_txt11">P</span>
+							<span className="hero_txt hero_txt11">r</span>
+							<span className="hero_txt hero_txt11">i</span>
+							<span className="hero_txt hero_txt11">s</span>
+							<span className="hero_txt hero_txt11">p</span>
 							<span className="hero_txt">B</span>
-							<span className="hero_txt">R</span>
-							<span className="hero_txt">A</span>
-							<span className="hero_txt">I</span>
-							<span className="hero_txt">N</span>
-							<span className="hero_txt">S</span>
+							<span className="hero_txt">r</span>
+							<span className="hero_txt">a</span>
+							<span className="hero_txt">i</span>
+							<span className="hero_txt">n</span>
+							<span className="hero_txt">s</span>
 						</h1>
 					</div>
 				</section>
@@ -86,7 +92,7 @@ const Banner = () => {
 				>
 					<div className="container">
 						<h2>
-							At CrispBrains, our marketing team works tirelessly and brainstorm
+							At 	<span className="hero_txt">CrispBrains</span>, our marketing team works tirelessly and brainstorm
 							to find out a unique solution, tailor made to your needs in{" "}
 							<span className="hero_txt">
 								{" "}

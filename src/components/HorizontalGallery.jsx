@@ -114,7 +114,7 @@ const HorizontalGallery = () => {
 											className={`galleryBox scroll_${items?.id}`}
 											key={index}
 										>
-											<div className="img_box position-relative targetbox">
+											{/* <div className="img_box position-relative targetbox">
 												<img
 													src={items?.img}
 													alt="gal1"
@@ -125,7 +125,7 @@ const HorizontalGallery = () => {
 														<span
 															className="txt"
 															style={{ color: items?.color }}
-														>
+														>	
 															View
 														</span>
 														<span className="icon">
@@ -142,7 +142,7 @@ const HorizontalGallery = () => {
 														</span>
 													</button>
 												</div>
-											</div>
+											</div> */}
 											<div className="detail_box d-flex align-items-center justify-content-between">
 												<h2 className="name_of_scape">{items?.name}</h2>
 											</div>
@@ -151,7 +151,7 @@ const HorizontalGallery = () => {
 								) : (
 									<>
 										<div className={`galleryBox scroll_${items?.id}`}>
-											<div className="img_box position-relative targetbox">
+											{/* <div className="img_box position-relative targetbox">
 												<ReactPlayer
 													width="100%"
 													height="250px"
@@ -182,7 +182,7 @@ const HorizontalGallery = () => {
 														</span>
 													</button>
 												</div>
-											</div>
+											</div> */}
 											<div className="detail_box d-flex align-items-center justify-content-between">
 												<h2 className="name_of_scape">{items?.name}</h2>
 												{/* <h5 className="type">{items?.type}</h5> */}

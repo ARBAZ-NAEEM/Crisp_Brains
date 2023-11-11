@@ -28,18 +28,17 @@ const Footer = () => {
 			<footer className="footerBottom">
 				<div className="container">
 					<h2 className="footerLogo">
-						<span className="foot_txt">C</span>
-						<span className="foot_txt">R</span>
-						<span className="foot_txt">I</span>
-						<span className="foot_txt">S</span>
-						<span className="foot_txt">P</span>
-						<span className="foot_txt">&nbsp;</span>
+						<span className="foot_txt hero_txt11">C</span>
+						<span className="foot_txt hero_txt11">r</span>
+						<span className="foot_txt hero_txt11">i</span>
+						<span className="foot_txt hero_txt11">s</span>
+						<span className="foot_txt hero_txt11">p</span>
 						<span className="foot_txt">B</span>
-						<span className="foot_txt">R</span>
-						<span className="foot_txt">A</span>
-						<span className="foot_txt">I</span>
-						<span className="foot_txt">N</span>
-						<span className="foot_txt">S</span>
+						<span className="foot_txt">r</span>
+						<span className="foot_txt">a</span>
+						<span className="foot_txt">i</span>
+						<span className="foot_txt">n</span>
+						<span className="foot_txt">s</span>
 					</h2>
 				</div>
 			</footer>
