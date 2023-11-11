@@ -286,7 +286,14 @@ h2.subtitle span.hero_txt {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #000;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
 	display: flex;
 	align-items: center;
 	justify-content: center;

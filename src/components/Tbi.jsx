@@ -29,7 +29,7 @@ const Tbi = () => {
 			"<",
 		);
 		tb.to("body", {
-			backgroundColor: "#000",
+			backgroundImage:"linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164)",
 			ease: Power1.easeInOut,
 		});
 
