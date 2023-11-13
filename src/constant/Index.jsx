@@ -8,4 +8,8 @@ import Gal7 from "../assets/img/scroll7.jpg";
 import Gal8 from "../assets/img/scroll8.jpg";
 import backVideo from "../assets/img/vide_back.mp4";
 
-export { Gal1, Gal2, Gal3, Gal4, Gal5, Gal6, Gal7, Gal8, backVideo };
+import review from "../assets/img/icons8-review-96.png"
+
+
+
+export { Gal1, Gal2, Gal3, Gal4, Gal5, Gal6, Gal7, Gal8, backVideo, review, };

@@ -4,6 +4,7 @@ import ShowCase from "../../components/ShowCase";
 import HorizontalGallery from "../../components/HorizontalGallery";
 import Tbi from "../../components/Tbi";
 import Footer from "../../components/Footer";
+import ReviewSection from "../../components/ReviewSection";
 
 const Index = () => {
 	return (
@@ -21,6 +22,8 @@ const Index = () => {
 			{/* HorizontalGallery Component Include */}
 			<HorizontalGallery />
 			{/* HorizontalGallery Component Include */}
+
+			<ReviewSection />
 
 			{/* Tbi Grow Up Component Include */}
 			<Tbi />

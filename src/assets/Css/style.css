@@ -272,7 +272,7 @@ h2.subtitle span.hero_txt {
 }
 .tbi_growup .heading h2 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	color: #fff;
 	/* background-image: linear-gradient(
 		to right,
@@ -285,6 +285,58 @@ h2.subtitle span.hero_txt {
 	-webkit-background-clip: text;
 	/* -webkit-text-fill-color: transparent; */
 	transform: scale(0);
+}
+.main-heading {
+    margin-top: 160px;
+}
+
+.scrolling-text {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .first-review h3 {
+    font-family: "Rajdhani";
+    font-size: 35px;
+    text-align: center;
+}
+.main-heading h2 {
+    background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.second-review h3 {
+    font-family: "Rajdhani";
+    font-size: 35px;
+    text-align: center;
+}
+
+.third-review h3 {
+    font-family: "Rajdhani";
+    font-size: 35px;
+    text-align: center;
+}
+
+span.color_gradient {
+    background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-heading h2 {
+    font-family: "Rajdhani";
+    font-size: 60px;
+    text-align: center;
+}
+  
+  .scrolling-text.visible {
+	opacity: 1;
+	transform: translateY(0);
+  }
+
+.second-review {
+    margin: 150px 0;
 }
 .tbi_growup .ball {
 	position: absolute;
@@ -364,6 +416,14 @@ section.contentText h2 {
 	text-align: center;
 }
 
+h3.cta_btn button.inside_btn {
+	background-color: unset;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    padding: 12px 50px;
+    font-size: 50px;
+}
 section.contentText h2 span.hero_txt {
 	background-image: linear-gradient(
 		to right,
@@ -384,6 +444,11 @@ section.contentText h2 span.hero_txt {
 }
 .heroMain {
 	position: relative;
+}
+
+.review-section {
+    text-align: center;
+    margin-top: 100px;
 }
 /* .heroMain .fullpageScroll {
 	position: absolute;
