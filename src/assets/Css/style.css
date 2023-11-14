@@ -27,7 +27,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: -9;
+	/* z-index: -9; */
 	opacity: 0.5;
 }
 .back_wall .borderLines {
@@ -275,6 +275,8 @@ h2.subtitle span.hero_txt {
 	z-index: -99;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
 }
 .tbi_growup .heading h2 {
 	text-align: center;

@@ -68,17 +68,17 @@ const Tbi = () => {
 						<b> FREE Digital Marketing Diagnosis</b> Today!
 					</h2>
 					<div className="ball"></div>
+					<div className="txt-slider overflow-hidden">
+						<h3 className="cta_btn">
+							{" "}
+							<button href="" className="inside_btn">
+								Get Started
+							</button>
+						</h3>
+						<h3 className="txt_slide2"></h3>
+					</div>
 				</div>
 			</section>
-			<div className="txt-slider overflow-hidden">
-				<h3 className="cta_btn">
-					{" "}
-					<button href="" className="inside_btn">
-						Get Started
-					</button>
-				</h3>
-				<h3 className="txt_slide2"></h3>
-			</div>
 		</>
 	);
 };
