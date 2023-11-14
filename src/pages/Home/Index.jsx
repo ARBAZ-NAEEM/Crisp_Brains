@@ -5,6 +5,7 @@ import HorizontalGallery from "../../components/HorizontalGallery";
 import Tbi from "../../components/Tbi";
 import Footer from "../../components/Footer";
 import ReviewSection from "../../components/ReviewSection";
+import WhatsAppButton from "../../components/WhatsAppButton";
 
 const Index = () => {
 	return (
@@ -27,6 +28,8 @@ const Index = () => {
 
 			{/* Tbi Grow Up Component Include */}
 			<Tbi />
+
+			<WhatsAppButton />
 			{/* Tbi Grow Up Component Include */}
 
 			{/* Footer Component Include */}
