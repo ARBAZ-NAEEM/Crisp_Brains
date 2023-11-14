@@ -86,8 +86,8 @@ const ShowCase = () => {
 							muted={true}
 						/>
 						<div className="txtwrapper">
-							<h1 className="scrollTxt1">Core Business</h1>
-							<h1 className="scrollTxt2">&nbsp;Customer Base</h1>
+							<h1 className="scrollTxt1">Building Brands</h1>
+							<h1 className="scrollTxt2">&nbsp;That Last!</h1>
 						</div>
 					</div>
 				</div>
