@@ -9,7 +9,6 @@ body {
 	src: url(../fonts/bodoni-roman.otf);
 }
 
-
 .cursor_ball {
 	width: 20px;
 	height: 20px;
@@ -143,9 +142,16 @@ h2.subtitle span.hero_txt {
 	margin: 0px auto;
 	text-align: center;
 	padding: 5px 25px;
-	background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .projects_sec .gallery {
 	display: -webkit-box;
@@ -287,56 +293,70 @@ h2.subtitle span.hero_txt {
 	transform: scale(0);
 }
 .main-heading {
-    margin-top: 160px;
+	margin-top: 160px;
 }
 
 .scrolling-text {
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 0.5s, transform 0.5s;
-  }
+}
 
-  .first-review h3 {
-    font-family: "Rajdhani";
-    font-size: 35px;
-    text-align: center;
+.first-review h3 {
+	font-family: "Rajdhani";
+	font-size: 35px;
+	text-align: center;
 }
 .main-heading h2 {
-    background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .second-review h3 {
-    font-family: "Rajdhani";
-    font-size: 35px;
-    text-align: center;
+	font-family: "Rajdhani";
+	font-size: 35px;
+	text-align: center;
 }
 
 .third-review h3 {
-    font-family: "Rajdhani";
-    font-size: 35px;
-    text-align: center;
+	font-family: "Rajdhani";
+	font-size: 35px;
+	text-align: center;
 }
 
 span.color_gradient {
-    background-image: linear-gradient( to right, #d11d58, #bd195f, #a71b64, #901e65, #792164 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background-image: linear-gradient(
+		to right,
+		#d11d58,
+		#bd195f,
+		#a71b64,
+		#901e65,
+		#792164
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .main-heading h2 {
-    font-family: "Rajdhani";
-    font-size: 60px;
-    text-align: center;
+	font-family: "Rajdhani";
+	font-size: 60px;
+	text-align: center;
 }
-  
-  .scrolling-text.visible {
+
+.scrolling-text.visible {
 	opacity: 1;
 	transform: translateY(0);
-  }
+}
 
 .second-review {
-    margin: 150px 0;
+	margin: 150px 0;
 }
 .tbi_growup .ball {
 	position: absolute;
@@ -403,9 +423,9 @@ span.color_gradient {
 		#a71b64,
 		#901e65,
 		#792164
-	); 
+	);
 	-webkit-background-clip: text;
-	 -webkit-text-fill-color: transparent; 
+	-webkit-text-fill-color: transparent;
 }
 
 /* Home Page Css End Here */
@@ -418,11 +438,11 @@ section.contentText h2 {
 
 h3.cta_btn button.inside_btn {
 	background-color: unset;
-    border: 1px solid #fff;
-    color: #fff;
-    border-radius: 40px;
-    padding: 12px 50px;
-    font-size: 50px;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 40px;
+	padding: 12px 50px;
+	font-size: 50px;
 }
 section.contentText h2 span.hero_txt {
 	background-image: linear-gradient(
@@ -447,8 +467,8 @@ section.contentText h2 span.hero_txt {
 }
 
 .review-section {
-    text-align: center;
-    margin-top: 100px;
+	text-align: center;
+	margin-top: 100px;
 }
 /* .heroMain .fullpageScroll {
 	position: absolute;
@@ -458,3 +478,170 @@ section.contentText h2 span.hero_txt {
 .heroMain {
 	height: 100vh;
 } */
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+	.scroll h1 {
+		font-size: 60px;
+	}
+	.projects_sec .gallery .galleryBox .detail_box .name_of_scape {
+		font-size: 35px;
+	}
+	.tbi_growup .heading h2 {
+		font-size: 35px;
+	}
+	h3.cta_btn button.inside_btn {
+		font-size: 35px;
+		margin-top: 15px;
+	}
+}
+@media (max-width: 991px) {
+	.cursor_ball {
+		display: none;
+	}
+	.hero_sec .banner_txt {
+		font-size: 110px;
+		line-height: 120px;
+	}
+	.second_hero_sec .subtitle {
+		font-size: 40px;
+	}
+	section.contentText h2 {
+		padding: 0 50px;
+		font-size: 35px;
+	}
+	.scroll h1 {
+		font-size: 50px;
+	}
+	.main-heading h2 {
+		font-size: 50px;
+	}
+	.first-review h3 {
+		font-size: 25px;
+	}
+	.second-review h3 {
+		font-size: 25px;
+	}
+	.third-review h3 {
+		font-size: 25px;
+	}
+	.footerBottom .footerLogo {
+		font-size: 100px;
+	}
+	.projects_sec .gallery .galleryBox .detail_box .name_of_scape {
+		font-size: 25px;
+	}
+	.projects_sec .gallery .galleryBox {
+		width: 33%;
+	}
+}
+@media (max-width: 768px) {
+	.hero_sec .banner_txt {
+		font-size: 80px;
+		line-height: 90px;
+	}
+	.scroll h1 {
+		font-size: 35px;
+	}
+}
+@media (max-width: 575px) {
+	section.contentText h2 {
+		padding: 0 0px;
+		font-size: 25px;
+		line-height: 35px;
+	}
+	.scroll h1 {
+		font-size: 24px;
+	}
+	.projects_sec .gallery .galleryBox img {
+		height: 150px;
+	}
+	.projects_sec .gallery .img_box {
+		height: 150px;
+		overflow: hidden;
+	}
+	.projects_sec .gallery .galleryBox .videoPlayer > div {
+		height: 150px !important;
+	}
+	.footerBottom .footerLogo {
+		font-size: 60px;
+	}
+	.tbi_growup .heading h2 {
+		font-size: 28px;
+		padding: 0 20px;
+	}
+}
+@media (max-width: 480px) {
+	.hero_sec .banner_txt {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.second_hero_sec .subtitle {
+		font-size: 25px;
+	}
+	.scroll h1 {
+		font-size: 18px;
+	}
+	.projects_sec .title h2 {
+		font-size: 30px;
+	}
+	.projects_sec .title h2 span {
+		padding: 0 0;
+	}
+	.projects_sec .gallery .galleryBox {
+		width: 40%;
+	}
+	.projects_sec .gallery .galleryBox .detail_box .name_of_scape {
+		font-size: 13px;
+	}
+	.main-heading h2 {
+		font-size: 33px;
+	}
+	.fullpageScroll {
+		padding: 0;
+	}
+	.first-review h3 {
+		font-size: 19px;
+	}
+	.second-review h3 {
+		font-size: 19px;
+	}
+	.third-review h3 {
+		font-size: 19px;
+	}
+	.tbi_growup .heading h2 {
+		font-size: 19px;
+	}
+	.txt-slider {
+		padding-bottom: 10px;
+	}
+	.footerBottom .footerLogo {
+		font-size: 45px;
+	}
+	.projects_sec .gallery .button-group .link_btn .txt {
+		padding: 3px 15px;
+		font-size: 17px;
+	}
+	.projects_sec .gallery .button-group .icon img {
+		width: 10px;
+		height: 10px;
+	}
+	.projects_sec .gallery .button-group .link_btn .icon {
+		height: 30px;
+		width: 30px;
+	}
+	.projects_sec .gallery .button-group .link_btn .txt {
+		padding: 3px 8px;
+		font-size: 10px;
+		margin-right: 4px;
+	}
+	.projects_sec .gallery .button-group .icon img {
+		width: 6px;
+		height: 6px;
+	}
+	.projects_sec .gallery .button-group .link_btn .icon {
+		height: 20px;
+		width: 20px;
+	}
+}
+/* Responsiveness */

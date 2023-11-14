@@ -92,8 +92,9 @@ const Banner = () => {
 				>
 					<div className="container">
 						<h2>
-							At 	<span className="hero_txt">CrispBrains</span>, our marketing team works tirelessly and brainstorm
-							to find out a unique solution, tailor made to your needs in{" "}
+							At <span className="hero_txt">CrispBrains</span>, our marketing
+							team works tirelessly and brainstorm to find out a unique
+							solution, tailor made to your needs in{" "}
 							<span className="hero_txt">
 								{" "}
 								creating a digital brand identity for your business.{" "}

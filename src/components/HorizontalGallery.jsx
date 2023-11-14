@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import arrowIcon from "../assets/img/arrow_icon.svg";
 import ReactPlayer from "react-player";
 import gsap, { Power1 } from "gsap";
@@ -17,6 +17,17 @@ import {
 gsap.registerPlugin(scrollTrigger);
 
 const HorizontalGallery = () => {
+	const [responsive, setResponsive] = useState(false);
+	useEffect(() => {
+		window.onresize = function () {
+			if (window.innerWidth < 991) {
+				setResponsive(true);
+			} else {
+				setResponsive(false);
+			}
+		};
+		console.log(responsive);
+	}, [responsive]);
 	const galleryData = [
 		{
 			id: 1,
@@ -114,18 +125,22 @@ const HorizontalGallery = () => {
 											className={`galleryBox scroll_${items?.id}`}
 											key={index}
 										>
-											{/* <div className="img_box position-relative targetbox">
+											<div className="img_box position-relative targetbox">
 												<img
 													src={items?.img}
 													alt="gal1"
 													className="img-fluid"
 												/>
-												<div className="button-group detailBtn">
+												<div
+													className={`button-group ${
+														!responsive ? "detailBtn" : ""
+													}`}
+												>
 													<button className="link_btn">
 														<span
 															className="txt"
 															style={{ color: items?.color }}
-														>	
+														>
 															View
 														</span>
 														<span className="icon">
@@ -142,7 +157,7 @@ const HorizontalGallery = () => {
 														</span>
 													</button>
 												</div>
-											</div> */}
+											</div>
 											<div className="detail_box d-flex align-items-center justify-content-between">
 												<h2 className="name_of_scape">{items?.name}</h2>
 											</div>
@@ -151,7 +166,7 @@ const HorizontalGallery = () => {
 								) : (
 									<>
 										<div className={`galleryBox scroll_${items?.id}`}>
-											{/* <div className="img_box position-relative targetbox">
+											<div className="img_box position-relative targetbox videoPlayer">
 												<ReactPlayer
 													width="100%"
 													height="250px"
@@ -182,7 +197,7 @@ const HorizontalGallery = () => {
 														</span>
 													</button>
 												</div>
-											</div> */}
+											</div>
 											<div className="detail_box d-flex align-items-center justify-content-between">
 												<h2 className="name_of_scape">{items?.name}</h2>
 												{/* <h5 className="type">{items?.type}</h5> */}
